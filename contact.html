@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="contact-title">Contact Us - SoftTech</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>V8Engine</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="./index.html" data-i18n="home">Home</a></li>
+                    <li><a href="./about.html" data-i18n="about">About</a></li>
+                    <li><a href="./projects.html" data-i18n="projects">Projects</a></li>
+                    <li><a href="./download.html" data-i18n="download">Download</a></li>
+                    <li><a href="./contact.html" class="active" data-i18n="contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="language-switch">
+                <button id="lang-en" class="lang-btn active">EN</button>
+                <button id="lang-zh" class="lang-btn">中文</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Contact Hero -->
+    <section class="contact-hero">
+        <div class="container">
+            <h2 data-i18n="get-in-touch">Get In Touch</h2>
+            <p data-i18n="contact-desc">Have a project in mind or want to learn more about our services? Reach out to us!</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact">
+        <div class="container">
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <h2 data-i18n="contact-info-title">Contact Information</h2>
+                    <div class="info-item">
+                        <h3 data-i18n="address">Address</h3>
+                        <p>123 Tech Street, San Francisco, CA 94103</p>
+                    </div>
+                    <div class="info-item">
+                        <h3 data-i18n="email">Email</h3>
+                        <p>582883825@qq.com</p>
+                    </div>
+                    <div class="info-item">
+                        <h3 data-i18n="phone">Phone</h3>
+                        <p>+1 (555) 123-4567</p>
+                    </div>
+                    <div class="info-item">
+                        <h3 data-i18n="business-hours">Business Hours</h3>
+                        <p data-i18n="hours">Monday - Friday: 9AM - 6PM</p>
+                    </div>
+                    
+                    <div class="social-links">
+                        <h3 data-i18n="follow-us">Follow Us</h3>
+                        <div class="social-icons">
+                            <a href="#" aria-label="Twitter"><span class="social-icon">🐦</span></a>
+                            <a href="#" aria-label="LinkedIn"><span class="social-icon">💼</span></a>
+                            <a href="#" aria-label="GitHub"><span class="social-icon">💻</span></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <h2 data-i18n="send-message">Send Us a Message</h2>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name" data-i18n="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" data-i18n="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject" data-i18n="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message" data-i18n="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn primary" data-i18n="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map">
+        <div class="container">
+            <h2 data-i18n="our-location">Our Location</h2>
+            <div class="map-container">
+                <div class="map-placeholder" data-i18n="map-placeholder">Map showing our location</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>V8Engine</h3>
+                    <p data-i18n="company-desc">V8 指尖世界 - A modern software company dedicated to creating innovative solutions</p>
+                </div>
+                <div class="footer-section">
+                    <h4 data-i18n="quick-links">Quick Links</h4>
+                    <ul>
+                        <li><a href="./index.html" data-i18n="home">Home</a></li>
+                        <li><a href="./about.html" data-i18n="about">About</a></li>
+                        <li><a href="./projects.html" data-i18n="projects">Projects</a></li>
+                        <li><a href="./contact.html" data-i18n="contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 data-i18n="contact-info">Contact Info</h4>
+                    <p>Email: 582883825@qq.com</p>
+                    <p data-i18n="rights-reserved">© 2025 V8Engine. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="./js/i18n.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/contact.js"></script>
+</body>
+</html>
