@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DualVPN Manager 文档 - V8Engine</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <style>
+        .docs-container {
+            display: flex;
+            min-height: calc(100vh - 200px);
+            margin-top: 20px;
+        }
+        
+        .docs-sidebar {
+            width: 250px;
+            background-color: #f8fafc;
+            padding: 20px;
+            border-right: 1px solid #e2e8f0;
+            position: sticky;
+            top: 100px;
+            height: fit-content;
+        }
+        
+        .docs-sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .docs-sidebar ul li {
+            margin-bottom: 10px;
+        }
+        
+        .docs-sidebar ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            padding: 8px 12px;
+            display: block;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+        
+        .docs-sidebar ul li a:hover,
+        .docs-sidebar ul li a.active {
+            background-color: #2563eb;
+            color: white;
+        }
+        
+        .docs-content {
+            flex: 1;
+            padding: 20px 40px;
+        }
+        
+        .docs-content h1 {
+            color: #1e40af;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e2e8f0;
+        }
+        
+        .docs-content h2 {
+            color: #2563eb;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+        
+        .docs-content p {
+            margin-bottom: 15px;
+            line-height: 1.7;
+        }
+        
+        .docs-content code {
+            background-color: #f1f5f9;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: monospace;
+        }
+        
+        .docs-content pre {
+            background-color: #f1f5f9;
+            padding: 15px;
+            border-radius: 4px;
+            overflow-x: auto;
+            margin: 20px 0;
+        }
+        
+        .docs-content .screenshot {
+            text-align: center;
+            margin: 20px 0;
+        }
+        
+        .docs-content .screenshot img {
+            max-width: 100%;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        .docs-content .screenshot .caption {
+            font-style: italic;
+            margin-top: 10px;
+            color: #666;
+        }
+        
+        @media (max-width: 768px) {
+            .docs-container {
+                flex-direction: column;
+            }
+            
+            .docs-sidebar {
+                width: 100%;
+                position: relative;
+                top: 0;
+                border-right: none;
+                border-bottom: 1px solid #e2e8f0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>V8Engine</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="../index.html" data-i18n="home">首页</a></li>
+                    <li><a href="../about.html" data-i18n="about">关于我们</a></li>
+                    <li><a href="../projects.html" data-i18n="projects">项目</a></li>
+                    <li><a href="../download.html" data-i18n="download">下载</a></li>
+                    <li><a href="../contact.html" data-i18n="contact">联系我们</a></li>
+                </ul>
+            </nav>
+            <div class="language-switch">
+                <button id="lang-en" class="lang-btn">EN</button>
+                <button id="lang-zh" class="lang-btn active">中文</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Documentation Section -->
+    <section class="docs-hero">
+        <div class="container">
+            <h2>DualVPN Manager 文档</h2>
+            <p>学习如何有效使用DualVPN Manager</p>
+        </div>
+    </section>
+
+    <div class="container docs-container">
+        <!-- Sidebar Navigation -->
+        <aside class="docs-sidebar">
+            <ul>
+                <li><a href="#overview" class="active">概述</a></li>
+                <li><a href="#installation">安装</a></li>
+                <li><a href="#interface">用户界面</a></li>
+                <li><a href="#configuration">配置</a></li>
+                <li><a href="#connection">连接管理</a></li>
+                <li><a href="#troubleshooting">故障排除</a></li>
+                <li><a href="#faq">常见问题</a></li>
+            </ul>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="docs-content">
+            <h1 id="overview">概述</h1>
+            <p>DualVPN Manager是一款专为MacOS设计的高级VPN管理工具，支持多连接功能。这款强大的应用程序允许您同时建立和管理多个VPN连接，通过指定的VPN连接路由特定流量，实现内网、外网和直连连接。典型场景是同时使用不同的VPN访问公司内网和外网，而无需切换代理。</p>
+            
+            <h2>主要功能</h2>
+            <ul>
+                <li>多VPN连接支持，增强安全性和灵活性</li>
+                <li>直观的MacOS原生界面</li>
+                <li>连接监控和统计数据</li>
+                <li>快速连接到收藏的服务器</li>
+                <li>高级路由配置</li>
+                <li>自动连接管理</li>
+                <li>同时访问内网和外网</li>
+            </ul>
+            
+            <h2>系统要求</h2>
+            <ul>
+                <li>操作系统：MacOS 10.15或更高版本</li>
+                <li>处理器：64位Intel或Apple Silicon</li>
+                <li>内存：最少4GB RAM</li>
+                <li>存储空间：100MB可用空间</li>
+            </ul>
+            
+            <h1 id="installation">安装</h1>
+            <p>按照以下步骤在您的MacOS系统上安装DualVPN Manager：</p>
+            
+            <h2>下载</h2>
+            <p>访问我们的<a href="../download.html">下载页面</a>获取最新版本的DualVPN Manager。</p>
+            
+            <h2>安装步骤</h2>
+            <ol>
+                <li>从我们的网站下载.dmg文件</li>
+                <li>打开下载的文件</li>
+                <li>将DualVPN Manager应用程序拖拽到您的应用程序文件夹</li>
+                <li>从应用程序文件夹打开应用程序</li>
+                <li>按照首次设置向导操作</li>
+            </ol>
+            
+            <h1 id="interface">用户界面</h1>
+            <p>DualVPN Manager界面设计直观易用。以下是主要组件的概述：</p>
+            
+            <div class="screenshot">
+                <img src="../images/d_vpn/1.png" alt="主仪表板">
+                <div class="caption">图1：主仪表板 - VPN连接概览</div>
+            </div>
+            
+            <p>主仪表板提供VPN状态的快速概览，包括连接信息、数据使用统计和快速访问按钮。</p>
+            
+            <div class="screenshot">
+                <img src="../images/d_vpn/2.png" alt="服务器选择">
+                <div class="caption">图2：服务器选择 - 从广泛的VPN服务器中选择</div>
+            </div>
+            
+            <p>服务器选择界面允许您从世界各地的各种VPN服务器中选择。您可以按位置、速度或其他标准筛选服务器。</p>
+            
+            <div class="screenshot">
+                <img src="../images/d_vpn/3.png" alt="连接设置">
+                <div class="caption">图3：连接设置 - 配置您的VPN连接参数</div>
+            </div>
+            
+            <p>连接设置面板为您的VPN连接提供高级配置选项，包括协议选择、加密设置等。</p>
+            
+            <div class="screenshot">
+                <img src="../images/d_vpn/4.png" alt="统计面板">
+                <div class="caption">图4：统计面板 - 监控您的数据使用和连接性能</div>
+            </div>
+            
+            <p>统计面板显示有关您的数据使用、连接速度和其他性能指标的实时信息。</p>
+            
+            <div class="screenshot">
+                <img src="../images/d_vpn/5.png" alt="偏好设置窗口">
+                <div class="caption">图5：偏好设置窗口 - 自定义应用程序行为</div>
+            </div>
+            
+            <p>偏好设置窗口允许您自定义应用程序的各个方面，包括自动连接设置、通知偏好和安全选项。</p>
+            
+            <h1 id="configuration">配置</h1>
+            <p>配置DualVPN Manager以匹配您的特定需求和偏好。</p>
+            
+            <h2>初始设置</h2>
+            <p>首次启动应用程序时，您将被引导完成初始设置过程：</p>
+            <ol>
+                <li>接受许可协议</li>
+                <li>选择您偏好的语言</li>
+                <li>设置您的安全偏好</li>
+                <li>配置自动连接设置</li>
+            </ol>
+            
+            <h2>高级设置</h2>
+            <p>通过偏好设置菜单访问高级设置：</p>
+            <ul>
+                <li>用于加密和认证的安全选项</li>
+                <li>VPN连接的网络配置</li>
+                <li>用户界面自定义</li>
+                <li>自动连接和启动设置</li>
+                <li>通知偏好设置</li>
+            </ul>
+            
+            <h1 id="connection">连接管理</h1>
+            <p>DualVPN Manager允许您建立和管理两个同时的VPN连接。</p>
+            
+            <h2>连接到VPN</h2>
+            <ol>
+                <li>从服务器列表中选择一个服务器</li>
+                <li>点击第一个连接的"连接"按钮</li>
+                <li>为第二个连接选择不同的服务器</li>
+                <li>点击第二个连接的"连接"按钮</li>
+            </ol>
+            
+            <h2>管理连接</h2>
+            <p>您可以通过主仪表板监控和管理您的连接：</p>
+            <ul>
+                <li>查看连接状态和统计数据</li>
+                <li>断开单个连接</li>
+                <li>在不断开连接的情况下切换服务器</li>
+                <li>暂停和恢复连接</li>
+            </ul>
+            
+            <h1 id="troubleshooting">故障排除</h1>
+            <p>如果您在使用DualVPN Manager时遇到问题，请尝试这些解决方案：</p>
+            
+            <h2>常见问题</h2>
+            <ul>
+                <li><strong>连接问题：</strong>检查您的网络设置和防火墙配置</li>
+                <li><strong>连接速度慢：</strong>尝试连接到不同的服务器</li>
+                <li><strong>应用程序崩溃：</strong>重新启动应用程序并确保您使用的是最新版本</li>
+                <li><strong>双连接冲突：</strong>确保两个VPN提供商都支持双连接</li>
+            </ul>
+            
+            <h2>联系支持</h2>
+            <p>如果您继续遇到问题，请<a href="../contact.html">联系我们的支持团队</a>寻求帮助。</p>
+            
+            <h1 id="faq">常见问题</h1>
+            
+            <h2>DualVPN Manager安全吗？</h2>
+            <p>是的，DualVPN Manager使用行业标准的加密协议来确保您的数据安全。双连接功能允许您通过两个独立的VPN服务器路由流量，以增强隐私性。</p>
+            
+            <h2>我可以将DualVPN Manager与其他VPN服务一起使用吗？</h2>
+            <p>DualVPN Manager设计为与大多数主要VPN提供商一起使用。但是，并非所有VPN服务都支持双连接。请与您的VPN提供商确认兼容性。</p>
+            
+            <h2>DualVPN Manager的费用是多少？</h2>
+            <p>DualVPN Manager可以免费下载和使用。但是，您需要订阅VPN服务才能建立连接。</p>
+            
+            <h2>DualVPN Manager会记录我的活动吗？</h2>
+            <p>不会，DualVPN Manager不会记录您的任何在线活动。该应用程序仅管理您的VPN连接，不会监控或存储您的浏览数据。</p>
+        </main>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>V8Engine</h3>
+                    <p data-i18n="company-desc">V8 指尖世界 - 一家致力于创造创新解决方案的现代软件公司</p>
+                </div>
+                <div class="footer-section">
+                    <h4 data-i18n="quick-links">快速链接</h4>
+                    <ul>
+                        <li><a href="../index.html" data-i18n="home">首页</a></li>
+                        <li><a href="../about.html" data-i18n="about">关于我们</a></li>
+                        <li><a href="../projects.html" data-i18n="projects">项目</a></li>
+                        <li><a href="../download.html" data-i18n="download">下载</a></li>
+                        <li><a href="../contact.html" data-i18n="contact">联系我们</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 data-i18n="contact-info">联系信息</h4>
+                    <p>Email: 582883825@qq.com</p>
+                    <p>网站: v8en.com</p>
+                    <p data-i18n="rights-reserved">© 2025 V8Engine。保留所有权利。</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="../js/i18n.js"></script>
+    <script src="../js/main.js"></script>
+    <script>
+        // Override the language switcher event listeners for this specific page
+        document.addEventListener('DOMContentLoaded', () => {
+            // Set initial language
+            translatePage('zh');
+            
+            // Add event listeners to language buttons
+            document.getElementById('lang-en')?.addEventListener('click', () => {
+                // Switch to English page
+                window.location.href = './dualvpn.html';
+            });
+            
+            document.getElementById('lang-zh')?.addEventListener('click', () => {
+                // Already on Chinese page, just update UI
+                document.querySelectorAll('.lang-btn').forEach(btn => {
+                    btn.classList.remove('active');
+                });
+                document.getElementById('lang-zh').classList.add('active');
+            });
+        });
+        
+        // Simple sidebar navigation
+        document.addEventListener('DOMContentLoaded', function() {
+            const links = document.querySelectorAll('.docs-sidebar a');
+            
+            links.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    // Remove active class from all links
+                    links.forEach(l => l.classList.remove('active'));
+                    
+                    // Add active class to clicked link
+                    this.classList.add('active');
+                });
+            });
+        });
+    </script>
+</body>
+</html>
