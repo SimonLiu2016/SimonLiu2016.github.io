@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>文档 - V8Engine</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <style>
+        .docs-container {
+            display: flex;
+            min-height: calc(100vh - 200px);
+            margin-top: 20px;
+        }
+        
+        .docs-sidebar {
+            width: 250px;
+            background-color: #f8fafc;
+            padding: 20px;
+            border-right: 1px solid #e2e8f0;
+            position: sticky;
+            top: 100px;
+            height: fit-content;
+        }
+        
+        .docs-sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .docs-sidebar ul li {
+            margin-bottom: 10px;
+        }
+        
+        .docs-sidebar ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            padding: 8px 12px;
+            display: block;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+        
+        .docs-sidebar ul li a:hover,
+        .docs-sidebar ul li a.active {
+            background-color: #2563eb;
+            color: white;
+        }
+        
+        .docs-content {
+            flex: 1;
+            padding: 20px 40px;
+        }
+        
+        .docs-content h1 {
+            color: #1e40af;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e2e8f0;
+        }
+        
+        .docs-content h2 {
+            color: #2563eb;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+        
+        .docs-content p {
+            margin-bottom: 15px;
+            line-height: 1.7;
+        }
+        
+        .docs-content code {
+            background-color: #f1f5f9;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: monospace;
+        }
+        
+        .docs-content pre {
+            background-color: #f1f5f9;
+            padding: 15px;
+            border-radius: 4px;
+            overflow-x: auto;
+            margin: 20px 0;
+        }
+        
+        @media (max-width: 768px) {
+            .docs-container {
+                flex-direction: column;
+            }
+            
+            .docs-sidebar {
+                width: 100%;
+                position: relative;
+                top: 0;
+                border-right: none;
+                border-bottom: 1px solid #e2e8f0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>V8Engine</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="../index.html" data-i18n="home">首页</a></li>
+                    <li><a href="../about.html" data-i18n="about">关于我们</a></li>
+                    <li><a href="../projects.html" data-i18n="projects">项目</a></li>
+                    <li><a href="../download.html" data-i18n="download">下载</a></li>
+                    <li><a href="../contact.html" data-i18n="contact">联系我们</a></li>
+                </ul>
+            </nav>
+            <div class="language-switch">
+                <button id="lang-en" class="lang-btn">EN</button>
+                <button id="lang-zh" class="lang-btn active">中文</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Documentation Section -->
+    <section class="docs-hero">
+        <div class="container">
+            <h2>文档</h2>
+            <p>学习如何有效使用我们的软件产品</p>
+        </div>
+    </section>
+
+    <div class="container docs-container">
+        <!-- Sidebar Navigation -->
+        <aside class="docs-sidebar">
+            <ul>
+                <li><a href="#getting-started" class="active">入门指南</a></li>
+                <li><a href="#installation">安装</a></li>
+                <li><a href="#configuration">配置</a></li>
+                <li><a href="#api-reference">API参考</a></li>
+                <li><a href="#troubleshooting">故障排除</a></li>
+                <li><a href="#faq">常见问题</a></li>
+            </ul>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="docs-content">
+            <h1 id="getting-started">入门指南</h1>
+            <p>欢迎阅读V8Engine文档。本指南将帮助您快速高效地开始使用我们的软件产品。</p>
+            
+            <h2>概述</h2>
+            <p>我们的软件产品旨在为您的技术需求提供安全高效的解决方案。无论您是建立VPN连接还是管理密码，我们的工具都提供了直观的界面和强大的安全功能。</p>
+            
+            <h2>系统要求</h2>
+            <p>在安装我们的软件之前，请确保您的系统满足以下要求：</p>
+            <ul>
+                <li>操作系统：MacOS 10.15或更高版本</li>
+                <li>处理器：64位Intel或Apple Silicon</li>
+                <li>内存：最少4GB RAM（推荐8GB）</li>
+                <li>存储空间：100MB可用空间</li>
+            </ul>
+            
+            <h1 id="installation">安装</h1>
+            <p>按照以下步骤在您的MacOS系统上安装我们的软件：</p>
+            
+            <h2>下载</h2>
+            <p>访问我们的<a href="../download.html">下载页面</a>获取最新版本的软件。</p>
+            
+            <h2>安装步骤</h2>
+            <ol>
+                <li>从我们的网站下载.dmg文件</li>
+                <li>打开下载的文件</li>
+                <li>将应用程序拖拽到您的应用程序文件夹</li>
+                <li>从应用程序文件夹打开应用程序</li>
+                <li>按照首次设置向导操作</li>
+            </ol>
+            
+            <h1 id="configuration">配置</h1>
+            <p>配置您的软件以匹配您的特定需求和偏好。</p>
+            
+            <h2>初始设置</h2>
+            <p>首次启动应用程序时，您将被引导完成初始设置过程：</p>
+            <ol>
+                <li>接受许可协议</li>
+                <li>选择您偏好的语言</li>
+                <li>设置您的安全偏好</li>
+                <li>如有适用，配置网络设置</li>
+            </ol>
+            
+            <h2>高级设置</h2>
+            <p>通过偏好设置菜单访问高级设置：</p>
+            <ul>
+                <li>用于加密和认证的安全选项</li>
+                <li>VPN连接的网络配置</li>
+                <li>用户界面自定义</li>
+                <li>备份和同步设置</li>
+            </ul>
+            
+            <h1 id="api-reference">API参考</h1>
+            <p>对于希望将我们的软件集成到其应用程序中的开发人员，我们提供了一个全面的API。</p>
+            
+            <h2>认证</h2>
+            <p>所有API请求都需要使用有效的API密钥进行认证：</p>
+            <pre><code>Authorization: Bearer YOUR_API_KEY</code></pre>
+            
+            <h2>端点</h2>
+            <p>我们的API提供以下端点：</p>
+            <ul>
+                <li><code>GET /api/v1/status</code> - 检查服务状态</li>
+                <li><code>POST /api/v1/connect</code> - 建立新连接</li>
+                <li><code>DELETE /api/v1/disconnect</code> - 终止现有连接</li>
+                <li><code>GET /api/v1/config</code> - 获取当前配置</li>
+            </ul>
+            
+            <h1 id="troubleshooting">故障排除</h1>
+            <p>如果您在使用我们的软件时遇到问题，请尝试这些解决方案：</p>
+            
+            <h2>常见问题</h2>
+            <ul>
+                <li><strong>连接问题：</strong>检查您的网络设置和防火墙配置</li>
+                <li><strong>性能问题：</strong>确保您的系统满足最低要求</li>
+                <li><strong>登录失败：</strong>验证您的凭据并检查账户锁定情况</li>
+            </ul>
+            
+            <h2>联系支持</h2>
+            <p>如果您继续遇到问题，请<a href="../contact.html">联系我们的支持团队</a>寻求帮助。</p>
+            
+            <h1 id="faq">常见问题</h1>
+            
+            <h2>我的数据安全吗？</h2>
+            <p>是的，我们使用行业标准的加密技术来保护您的数据在传输和存储过程中的安全。</p>
+            
+            <h2>我可以在多个设备上使用该软件吗？</h2>
+            <p>根据您的许可证，您可能能够在多个设备上使用该软件。请查看您的许可协议了解详细信息。</p>
+            
+            <h2>更新频率如何？</h2>
+            <p>我们每月发布次要更新，每季度发布主要更新。所有更新对授权用户免费。</p>
+        </main>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>V8Engine</h3>
+                    <p data-i18n="company-desc">V8 指尖世界 - 一家致力于创造创新解决方案的现代软件公司</p>
+                </div>
+                <div class="footer-section">
+                    <h4 data-i18n="quick-links">快速链接</h4>
+                    <ul>
+                        <li><a href="../index.html" data-i18n="home">首页</a></li>
+                        <li><a href="../about.html" data-i18n="about">关于我们</a></li>
+                        <li><a href="../projects.html" data-i18n="projects">项目</a></li>
+                        <li><a href="../download.html" data-i18n="download">下载</a></li>
+                        <li><a href="../contact.html" data-i18n="contact">联系我们</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 data-i18n="contact-info">联系信息</h4>
+                    <p>Email: 582883825@qq.com</p>
+                    <p>网站: v8en.com</p>
+                    <p data-i18n="rights-reserved">© 2025 V8Engine。保留所有权利。</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="../js/i18n.js"></script>
+    <script src="../js/main.js"></script>
+    <script>
+        // Simple sidebar navigation
+        document.addEventListener('DOMContentLoaded', function() {
+            const links = document.querySelectorAll('.docs-sidebar a');
+            
+            links.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    // Remove active class from all links
+                    links.forEach(l => l.classList.remove('active'));
+                    
+                    // Add active class to clicked link
+                    this.classList.add('active');
+                });
+            });
+        });
+    </script>
+</body>
+</html>

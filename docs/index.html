@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentation - V8Engine</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <style>
+        .docs-container {
+            display: flex;
+            min-height: calc(100vh - 200px);
+            margin-top: 20px;
+        }
+        
+        .docs-sidebar {
+            width: 250px;
+            background-color: #f8fafc;
+            padding: 20px;
+            border-right: 1px solid #e2e8f0;
+            position: sticky;
+            top: 100px;
+            height: fit-content;
+        }
+        
+        .docs-sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .docs-sidebar ul li {
+            margin-bottom: 10px;
+        }
+        
+        .docs-sidebar ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            padding: 8px 12px;
+            display: block;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+        
+        .docs-sidebar ul li a:hover,
+        .docs-sidebar ul li a.active {
+            background-color: #2563eb;
+            color: white;
+        }
+        
+        .docs-content {
+            flex: 1;
+            padding: 20px 40px;
+        }
+        
+        .docs-content h1 {
+            color: #1e40af;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e2e8f0;
+        }
+        
+        .docs-content h2 {
+            color: #2563eb;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+        
+        .docs-content p {
+            margin-bottom: 15px;
+            line-height: 1.7;
+        }
+        
+        .docs-content code {
+            background-color: #f1f5f9;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: monospace;
+        }
+        
+        .docs-content pre {
+            background-color: #f1f5f9;
+            padding: 15px;
+            border-radius: 4px;
+            overflow-x: auto;
+            margin: 20px 0;
+        }
+        
+        @media (max-width: 768px) {
+            .docs-container {
+                flex-direction: column;
+            }
+            
+            .docs-sidebar {
+                width: 100%;
+                position: relative;
+                top: 0;
+                border-right: none;
+                border-bottom: 1px solid #e2e8f0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>V8Engine</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="../index.html" data-i18n="home">Home</a></li>
+                    <li><a href="../about.html" data-i18n="about">About</a></li>
+                    <li><a href="../projects.html" data-i18n="projects">Projects</a></li>
+                    <li><a href="../download.html" data-i18n="download">Download</a></li>
+                    <li><a href="../contact.html" data-i18n="contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="language-switch">
+                <button id="lang-en" class="lang-btn active">EN</button>
+                <button id="lang-zh" class="lang-btn">中文</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Documentation Section -->
+    <section class="docs-hero">
+        <div class="container">
+            <h2>Documentation</h2>
+            <p>Learn how to use our software products effectively</p>
+        </div>
+    </section>
+
+    <div class="container docs-container">
+        <!-- Sidebar Navigation -->
+        <aside class="docs-sidebar">
+            <ul>
+                <li><a href="#getting-started" class="active">Getting Started</a></li>
+                <li><a href="#installation">Installation</a></li>
+                <li><a href="#configuration">Configuration</a></li>
+                <li><a href="#api-reference">API Reference</a></li>
+                <li><a href="#troubleshooting">Troubleshooting</a></li>
+                <li><a href="#faq">FAQ</a></li>
+            </ul>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="docs-content">
+            <h1 id="getting-started">Getting Started</h1>
+            <p>Welcome to the V8Engine documentation. This guide will help you get started with our software products quickly and efficiently.</p>
+            
+            <h2>Overview</h2>
+            <p>Our software products are designed to provide secure and efficient solutions for your technical needs. Whether you're setting up a VPN connection or managing your passwords, our tools offer intuitive interfaces and robust security features.</p>
+            
+            <h2>System Requirements</h2>
+            <p>Before installing our software, ensure your system meets the following requirements:</p>
+            <ul>
+                <li>Operating System: MacOS 10.15 or later</li>
+                <li>Processor: 64-bit Intel or Apple Silicon</li>
+                <li>Memory: 4GB RAM minimum (8GB recommended)</li>
+                <li>Storage: 100MB available space</li>
+            </ul>
+            
+            <h1 id="installation">Installation</h1>
+            <p>Follow these steps to install our software on your MacOS system:</p>
+            
+            <h2>Download</h2>
+            <p>Visit our <a href="../download.html">download page</a> to get the latest version of the software.</p>
+            
+            <h2>Installation Steps</h2>
+            <ol>
+                <li>Download the .dmg file from our website</li>
+                <li>Open the downloaded file</li>
+                <li>Drag the application to your Applications folder</li>
+                <li>Open the application from your Applications folder</li>
+                <li>Follow the first-time setup wizard</li>
+            </ol>
+            
+            <h1 id="configuration">Configuration</h1>
+            <p>Configure your software to match your specific needs and preferences.</p>
+            
+            <h2>Initial Setup</h2>
+            <p>When you first launch the application, you'll be guided through an initial setup process:</p>
+            <ol>
+                <li>Accept the license agreement</li>
+                <li>Choose your preferred language</li>
+                <li>Set up your security preferences</li>
+                <li>Configure any network settings if applicable</li>
+            </ol>
+            
+            <h2>Advanced Settings</h2>
+            <p>Access advanced settings through the Preferences menu:</p>
+            <ul>
+                <li>Security options for encryption and authentication</li>
+                <li>Network configuration for VPN connections</li>
+                <li>User interface customization</li>
+                <li>Backup and synchronization settings</li>
+            </ul>
+            
+            <h1 id="api-reference">API Reference</h1>
+            <p>For developers who want to integrate our software into their applications, we provide a comprehensive API.</p>
+            
+            <h2>Authentication</h2>
+            <p>All API requests require authentication using a valid API key:</p>
+            <pre><code>Authorization: Bearer YOUR_API_KEY</code></pre>
+            
+            <h2>Endpoints</h2>
+            <p>Our API provides the following endpoints:</p>
+            <ul>
+                <li><code>GET /api/v1/status</code> - Check the status of the service</li>
+                <li><code>POST /api/v1/connect</code> - Establish a new connection</li>
+                <li><code>DELETE /api/v1/disconnect</code> - Terminate an existing connection</li>
+                <li><code>GET /api/v1/config</code> - Retrieve current configuration</li>
+            </ul>
+            
+            <h1 id="troubleshooting">Troubleshooting</h1>
+            <p>If you encounter issues with our software, try these solutions:</p>
+            
+            <h2>Common Issues</h2>
+            <ul>
+                <li><strong>Connection problems:</strong> Check your network settings and firewall configuration</li>
+                <li><strong>Performance issues:</strong> Ensure your system meets the minimum requirements</li>
+                <li><strong>Login failures:</strong> Verify your credentials and check for account lockouts</li>
+            </ul>
+            
+            <h2>Contact Support</h2>
+            <p>If you continue to experience problems, please <a href="../contact.html">contact our support team</a> for assistance.</p>
+            
+            <h1 id="faq">Frequently Asked Questions</h1>
+            
+            <h2>Is my data secure?</h2>
+            <p>Yes, we use industry-standard encryption to protect your data both in transit and at rest.</p>
+            
+            <h2>Can I use the software on multiple devices?</h2>
+            <p>Depending on your license, you may be able to use the software on multiple devices. Check your license agreement for details.</p>
+            
+            <h2>How often are updates released?</h2>
+            <p>We release minor updates monthly and major updates quarterly. All updates are free for licensed users.</p>
+        </main>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>V8Engine</h3>
+                    <p data-i18n="company-desc">V8 指尖世界 - A modern software company dedicated to creating innovative solutions</p>
+                </div>
+                <div class="footer-section">
+                    <h4 data-i18n="quick-links">Quick Links</h4>
+                    <ul>
+                        <li><a href="../index.html" data-i18n="home">Home</a></li>
+                        <li><a href="../about.html" data-i18n="about">About</a></li>
+                        <li><a href="../projects.html" data-i18n="projects">Projects</a></li>
+                        <li><a href="../download.html" data-i18n="download">Download</a></li>
+                        <li><a href="../contact.html" data-i18n="contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 data-i18n="contact-info">Contact Info</h4>
+                    <p>Email: 582883825@qq.com</p>
+                    <p>Website: v8en.com</p>
+                    <p data-i18n="rights-reserved">© 2025 V8Engine. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="../js/i18n.js"></script>
+    <script src="../js/main.js"></script>
+    <script>
+        // Simple sidebar navigation
+        document.addEventListener('DOMContentLoaded', function() {
+            const links = document.querySelectorAll('.docs-sidebar a');
+            
+            links.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    // Remove active class from all links
+                    links.forEach(l => l.classList.remove('active'));
+                    
+                    // Add active class to clicked link
+                    this.classList.add('active');
+                });
+            });
+        });
+    </script>
+</body>
+</html>
