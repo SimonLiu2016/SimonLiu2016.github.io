@@ -62,9 +62,10 @@ const translations = {
     "open-source-desc": "We believe in the power of open collaboration. Here are some of our contributions to the open source community.",
     "ui-lib-desc": "A collection of reusable UI components built with React and TypeScript.",
     "api-toolkit-desc": "Tools and utilities for rapid API development and testing.",
-    "view-on-github": "Download Now",
+    "view-on-github": "View on GitHub",
     "view-on-github-link": "View on GitHub",
     "documentation": "Documentation",
+    "download-now": "Download Now",
     "dualvpn-documentation": "DualVPN Documentation",
     
     // Contact Page
@@ -160,9 +161,10 @@ const translations = {
     "open-source-desc": "我们相信开放协作的力量。以下是我们对开源社区的一些贡献。",
     "ui-lib-desc": "使用React和TypeScript构建的可重用UI组件集合。",
     "api-toolkit-desc": "用于快速API开发和测试的工具和实用程序。",
-    "view-on-github": "立即下载",
+    "view-on-github": "在GitHub上查看",
     "view-on-github-link": "在GitHub上查看",
     "documentation": "文档",
+    "download-now": "立即下载",
     "dualvpn-documentation": "DualVPN文档",
     
     // Contact Page
