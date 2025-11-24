@@ -197,26 +197,6 @@
     <!-- Scripts -->
     <script src="./js/i18n.js"></script>
     <script src="./js/main.js"></script>
-    <script>
-        // Override the language switcher event listeners for this specific page
-        document.addEventListener('DOMContentLoaded', () => {
-            // Set initial language
-            translatePage('zh');
-            
-            // Add event listeners to language buttons
-            document.getElementById('lang-en')?.addEventListener('click', () => {
-                // Switch to English page
-                window.location.href = './pricing.html';
-            });
-            
-            document.getElementById('lang-zh')?.addEventListener('click', () => {
-                // Already on Chinese page, just update UI
-                document.querySelectorAll('.lang-btn').forEach(btn => {
-                    btn.classList.remove('active');
-                });
-                document.getElementById('lang-zh').classList.add('active');
-            });
-        });
-    </script>
+
 </body>
 </html>
