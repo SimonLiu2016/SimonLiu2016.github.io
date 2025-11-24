@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="about-title">关于我们 - V8Engine</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>V8Engine</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="./index_zh.html" data-i18n="home">首页</a></li>
+                    <li><a href="./about_zh.html" class="active" data-i18n="about">关于我们</a></li>
+                    <li><a href="./projects.html" data-i18n="projects">项目</a></li>
+                    <li><a href="./pricing_zh.html" data-i18n="pricing">定价</a></li>
+                    <li><a href="./download.html" data-i18n="download">下载</a></li>
+                    <li><a href="./contact.html" data-i18n="contact">联系我们</a></li>
+                </ul>
+            </nav>
+            <div class="language-switch">
+                <button id="lang-en" class="lang-btn">EN</button>
+                <button id="lang-zh" class="lang-btn active">中文</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section class="about-hero">
+        <div class="container">
+            <h2 data-i18n="our-story">我们的故事</h2>
+            <p data-i18n="about-desc">V8Engine成立的愿景是通过创造创新解决方案来彻底改变软件行业，赋能全球企业。</p>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="team">
+        <div class="container">
+            <h2 data-i18n="meet-team">认识我们的团队</h2>
+            <div class="team-grid">
+                <div class="team-member">
+                    <div class="member-photo">
+                        <img src="./images/team1.jpg" alt="团队成员" onerror="this.style.display='none'">
+                    </div>
+                    <h3>Simon Liu</h3>
+                    <p class="position" data-i18n="ceo">首席执行官兼创始人</p>
+                    <p data-i18n="alex-bio">Simon拥有超过15年的软件开发经验，他以远见和专业知识领导我们的团队。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Values Section -->
+    <section class="values">
+        <div class="container">
+            <h2 data-i18n="our-values">我们的价值观</h2>
+            <div class="values-grid">
+                <div class="value-item">
+                    <h3 data-i18n="innovation">创新</h3>
+                    <p data-i18n="innovation-desc">我们不断探索新的想法和技术，以保持领先地位。</p>
+                </div>
+                <div class="value-item">
+                    <h3 data-i18n="quality">质量</h3>
+                    <p data-i18n="quality-desc">我们致力于交付超越期望的卓越产品。</p>
+                </div>
+                <div class="value-item">
+                    <h3 data-i18n="integrity">诚信</h3>
+                    <p data-i18n="integrity-desc">我们在所有业务往来中都秉持诚实和透明的原则。</p>
+                </div>
+                <div class="value-item">
+                    <h3 data-i18n="collaboration">协作</h3>
+                    <p data-i18n="collaboration-desc">我们相信团队合作的力量能够取得非凡的成果。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>V8Engine</h3>
+                    <p data-i18n="company-desc">V8 指尖世界 - 一家致力于创造创新解决方案的现代软件公司</p>
+                </div>
+                <div class="footer-section">
+                    <h4 data-i18n="quick-links">快速链接</h4>
+                    <ul>
+                        <li><a href="./index_zh.html" data-i18n="home">首页</a></li>
+                        <li><a href="./about_zh.html" data-i18n="about">关于我们</a></li>
+                        <li><a href="./projects.html" data-i18n="projects">项目</a></li>
+                        <li><a href="./pricing_zh.html" data-i18n="pricing">定价</a></li>
+                        <li><a href="./contact.html" data-i18n="contact">联系我们</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>法律</h4>
+                    <ul>
+                        <li><a href="./terms-and-conditions_zh.html">条款和条件</a></li>
+                        <li><a href="./privacy-policy_zh.html">隐私政策</a></li>
+                        <li><a href="./refund-policy_zh.html">退款政策</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 data-i18n="contact-info">联系信息</h4>
+                    <p>Email: 582883825@qq.com</p>
+                    <p>© 2025 V8Engine (Simon Liu)。保留所有权利。</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="./js/i18n.js"></script>
+    <script src="./js/main.js"></script>
+    <script>
+        // Override the language switcher event listeners for this specific page
+        document.addEventListener('DOMContentLoaded', () => {
+            // Set initial language
+            translatePage('zh');
+            
+            // Add event listeners to language buttons
+            document.getElementById('lang-en')?.addEventListener('click', () => {
+                // Switch to English page
+                window.location.href = './about.html';
+            });
+            
+            document.getElementById('lang-zh')?.addEventListener('click', () => {
+                // Already on Chinese page, just update UI
+                document.querySelectorAll('.lang-btn').forEach(btn => {
+                    btn.classList.remove('active');
+                });
+                document.getElementById('lang-zh').classList.add('active');
+            });
+        });
+    </script>
+</body>
+</html>

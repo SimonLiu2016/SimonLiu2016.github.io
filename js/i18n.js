@@ -5,6 +5,7 @@ const translations = {
     "home": "Home",
     "about": "About",
     "projects": "Projects",
+    "pricing": "Pricing",
     "download": "Download",
     "contact": "Contact",
     
@@ -104,6 +105,7 @@ const translations = {
     "home": "首页",
     "about": "关于我们",
     "projects": "项目",
+    "pricing": "定价",
     "download": "下载",
     "contact": "联系我们",
     

@@ -155,5 +155,26 @@
     <!-- Scripts -->
     <script src="./js/i18n.js"></script>
     <script src="./js/main.js"></script>
+    <script>
+        // Override the language switcher event listeners for this specific page
+        document.addEventListener('DOMContentLoaded', () => {
+            // Set initial language
+            translatePage('en');
+            
+            // Add event listeners to language buttons
+            document.getElementById('lang-en')?.addEventListener('click', () => {
+                // Already on English page, just update UI
+                document.querySelectorAll('.lang-btn').forEach(btn => {
+                    btn.classList.remove('active');
+                });
+                document.getElementById('lang-en').classList.add('active');
+            });
+            
+            document.getElementById('lang-zh')?.addEventListener('click', () => {
+                // Switch to Chinese page
+                window.location.href = './terms-and-conditions_zh.html';
+            });
+        });
+    </script>
 </body>
 </html>

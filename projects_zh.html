@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="projects-title">我们的项目 - V8Engine</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>V8Engine</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="./index_zh.html" data-i18n="home">首页</a></li>
+                    <li><a href="./about.html" data-i18n="about">关于我们</a></li>
+                    <li><a href="./projects_zh.html" class="active" data-i18n="projects">项目</a></li>
+                    <li><a href="./pricing_zh.html" data-i18n="pricing">定价</a></li>
+                    <li><a href="./download.html" data-i18n="download">下载</a></li>
+                    <li><a href="./contact.html" data-i18n="contact">联系我们</a></li>
+                </ul>
+            </nav>
+            <div class="language-switch">
+                <button id="lang-en" class="lang-btn">EN</button>
+                <button id="lang-zh" class="lang-btn active">中文</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Projects Hero -->
+    <section class="projects-hero">
+        <div class="container">
+            <h2 data-i18n="our-projects">我们的项目</h2>
+            <p data-i18n="projects-desc">探索我们推动业务成功的创新软件解决方案组合。</p>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects">
+        <div class="container">
+            <div class="projects-filter">
+                <button class="filter-btn active" data-filter="all" data-i18n="all">全部</button>
+                <button class="filter-btn" data-filter="web" data-i18n="web">网页</button>
+                <button class="filter-btn" data-filter="mobile" data-i18n="mobile">移动</button>
+                <button class="filter-btn" data-filter="desktop" data-i18n="desktop">桌面</button>
+                <button class="filter-btn" data-filter="open-source" data-i18n="open-source">开源</button>
+            </div>
+
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card" data-category="desktop">
+                    <div class="project-image">
+                        <img src="./images/project1.jpg" alt="DualVPN Manager" onerror="this.style.display='none'">
+                    </div>
+                    <div class="project-content">
+                        <h3>DualVPN Manager</h3>
+                        <p data-i18n="dualvpn-project-desc">支持MacOS的多连接高级VPN管理工具</p>
+                        <div class="project-tags">
+                            <span class="tag">MacOS</span>
+                            <span class="tag">Swift</span>
+                            <span class="tag">网络</span>
+                        </div>
+                        <a href="https://github.com/SimonLiu2016/dualvpn_manager" class="btn primary" target="_blank" data-i18n="view-on-github">在GitHub上查看</a>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card" data-category="desktop">
+                    <div class="project-image">
+                        <img src="./images/project2.jpg" alt="Password Manager" onerror="this.style.display='none'">
+                    </div>
+                    <div class="project-content">
+                        <h3>Password Manager</h3>
+                        <p data-i18n="password-project-desc">支持MacOS的带加密功能的安全密码管理解决方案</p>
+                        <div class="project-tags">
+                            <span class="tag">MacOS</span>
+                            <span class="tag">Swift</span>
+                            <span class="tag">安全</span>
+                        </div>
+                        <a href="https://github.com/SimonLiu2016/password_manager" class="btn primary" target="_blank" data-i18n="view-on-github">在GitHub上查看</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Open Source Highlight -->
+    <section class="open-source-highlight">
+        <div class="container">
+            <h2 data-i18n="open-source-projects">开源项目</h2>
+            <p data-i18n="open-source-desc">我们相信开放协作的力量。以下是我们对开源社区的一些贡献。</p>
+            
+            <div class="oss-projects">
+                <div class="oss-project">
+                    <h3>DualVPN Manager</h3>
+                    <p data-i18n="ui-lib-desc">支持MacOS的多连接高级VPN管理工具</p>
+                    <div class="oss-stats">
+                        <span class="stat"><i class="star-icon">★</i> 1.2k 星标</span>
+                        <span class="stat"><i class="fork-icon">⑂</i> 240 复刻</span>
+                    </div>
+                    <a href="https://github.com/SimonLiu2016/dualvpn_manager" class="btn secondary" data-i18n="view-on-github">在GitHub上查看</a>
+                </div>
+                
+                <div class="oss-project">
+                    <h3>Password Manager</h3>
+                    <p data-i18n="api-toolkit-desc">支持MacOS的带加密功能的安全密码管理解决方案</p>
+                    <div class="oss-stats">
+                        <span class="stat"><i class="star-icon">★</i> 850 星标</span>
+                        <span class="stat"><i class="fork-icon">⑂</i> 120 复刻</span>
+                    </div>
+                    <a href="https://github.com/SimonLiu2016/password_manager" class="btn secondary" data-i18n="view-on-github">在GitHub上查看</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>V8Engine</h3>
+                    <p data-i18n="company-desc">V8 指尖世界 - 一家致力于创造创新解决方案的现代软件公司</p>
+                </div>
+                <div class="footer-section">
+                    <h4 data-i18n="quick-links">快速链接</h4>
+                    <ul>
+                        <li><a href="./index_zh.html" data-i18n="home">首页</a></li>
+                        <li><a href="./about.html" data-i18n="about">关于我们</a></li>
+                        <li><a href="./projects_zh.html" data-i18n="projects">项目</a></li>
+                        <li><a href="./pricing_zh.html" data-i18n="pricing">定价</a></li>
+                        <li><a href="./contact.html" data-i18n="contact">联系我们</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>法律</h4>
+                    <ul>
+                        <li><a href="./terms-and-conditions_zh.html">条款和条件</a></li>
+                        <li><a href="./privacy-policy_zh.html">隐私政策</a></li>
+                        <li><a href="./refund-policy_zh.html">退款政策</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 data-i18n="contact-info">联系信息</h4>
+                    <p>Email: 582883825@qq.com</p>
+                    <p>© 2025 V8Engine (Simon Liu)。保留所有权利。</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="./js/i18n.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/projects.js"></script>
+    <script>
+        // Override the language switcher event listeners for this specific page
+        document.addEventListener('DOMContentLoaded', () => {
+            // Set initial language
+            translatePage('zh');
+            
+            // Add event listeners to language buttons
+            document.getElementById('lang-en')?.addEventListener('click', () => {
+                // Switch to English page
+                window.location.href = './projects.html';
+            });
+            
+            document.getElementById('lang-zh')?.addEventListener('click', () => {
+                // Already on Chinese page, just update UI
+                document.querySelectorAll('.lang-btn').forEach(btn => {
+                    btn.classList.remove('active');
+                });
+                document.getElementById('lang-zh').classList.add('active');
+            });
+        });
+    </script>
+</body>
+</html>

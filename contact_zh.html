@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="contact-title">联系我们 - V8Engine</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>V8Engine</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="./index_zh.html" data-i18n="home">首页</a></li>
+                    <li><a href="./about.html" data-i18n="about">关于我们</a></li>
+                    <li><a href="./projects.html" data-i18n="projects">项目</a></li>
+                    <li><a href="./pricing_zh.html" data-i18n="pricing">定价</a></li>
+                    <li><a href="./download.html" data-i18n="download">下载</a></li>
+                    <li><a href="./contact_zh.html" class="active" data-i18n="contact">联系我们</a></li>
+                </ul>
+            </nav>
+            <div class="language-switch">
+                <button id="lang-en" class="lang-btn">EN</button>
+                <button id="lang-zh" class="lang-btn active">中文</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Contact Hero -->
+    <section class="contact-hero">
+        <div class="container">
+            <h2 data-i18n="get-in-touch">联系我们</h2>
+            <p data-i18n="contact-desc">有项目在想或者想了解更多服务信息？联系我们！</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact">
+        <div class="container">
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <h2 data-i18n="contact-info-title">联系信息</h2>
+                    <div class="info-item">
+                        <h3 data-i18n="address">地址</h3>
+                        <p>123 科技街, 旧金山, CA 94103</p>
+                    </div>
+                    <div class="info-item">
+                        <h3 data-i18n="email">邮箱</h3>
+                        <p>582883825@qq.com</p>
+                    </div>
+                    <div class="info-item">
+                        <h3 data-i18n="phone">电话</h3>
+                        <p>+1 (555) 123-4567</p>
+                    </div>
+                    <div class="info-item">
+                        <h3 data-i18n="business-hours">工作时间</h3>
+                        <p data-i18n="hours">周一至周五：上午9点至下午6点</p>
+                    </div>
+                    
+                    <div class="social-links">
+                        <h3 data-i18n="follow-us">关注我们</h3>
+                        <div class="social-icons">
+                            <a href="#" aria-label="Twitter"><span class="social-icon">🐦</span></a>
+                            <a href="#" aria-label="LinkedIn"><span class="social-icon">💼</span></a>
+                            <a href="#" aria-label="GitHub"><span class="social-icon">💻</span></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <h2 data-i18n="send-message">发送消息</h2>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name" data-i18n="name">姓名</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" data-i18n="email">邮箱</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject" data-i18n="subject">主题</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message" data-i18n="message">消息</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn primary" data-i18n="submit">提交</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map">
+        <div class="container">
+            <h2 data-i18n="our-location">我们的位置</h2>
+            <div class="map-container">
+                <div class="map-placeholder" data-i18n="map-placeholder">显示我们位置的地图</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>V8Engine</h3>
+                    <p data-i18n="company-desc">V8 指尖世界 - 一家致力于创造创新解决方案的现代软件公司</p>
+                </div>
+                <div class="footer-section">
+                    <h4 data-i18n="quick-links">快速链接</h4>
+                    <ul>
+                        <li><a href="./index_zh.html" data-i18n="home">首页</a></li>
+                        <li><a href="./about.html" data-i18n="about">关于我们</a></li>
+                        <li><a href="./projects.html" data-i18n="projects">项目</a></li>
+                        <li><a href="./pricing_zh.html" data-i18n="pricing">定价</a></li>
+                        <li><a href="./contact_zh.html" data-i18n="contact">联系我们</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>法律</h4>
+                    <ul>
+                        <li><a href="./terms-and-conditions_zh.html">条款和条件</a></li>
+                        <li><a href="./privacy-policy_zh.html">隐私政策</a></li>
+                        <li><a href="./refund-policy_zh.html">退款政策</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 data-i18n="contact-info">联系信息</h4>
+                    <p>Email: 582883825@qq.com</p>
+                    <p>© 2025 V8Engine (Simon Liu)。保留所有权利。</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="./js/i18n.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/contact.js"></script>
+    <script>
+        // Override the language switcher event listeners for this specific page
+        document.addEventListener('DOMContentLoaded', () => {
+            // Set initial language
+            translatePage('zh');
+            
+            // Add event listeners to language buttons
+            document.getElementById('lang-en')?.addEventListener('click', () => {
+                // Switch to English page
+                window.location.href = './contact.html';
+            });
+            
+            document.getElementById('lang-zh')?.addEventListener('click', () => {
+                // Already on Chinese page, just update UI
+                document.querySelectorAll('.lang-btn').forEach(btn => {
+                    btn.classList.remove('active');
+                });
+                document.getElementById('lang-zh').classList.add('active');
+            });
+        });
+    </script>
+</body>
+</html>

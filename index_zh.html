@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>软件公司</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>V8Engine</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="./index_zh.html" class="active" data-i18n="home">首页</a></li>
+                    <li><a href="./about.html" data-i18n="about">关于我们</a></li>
+                    <li><a href="./projects.html" data-i18n="projects">项目</a></li>
+                    <li><a href="./pricing_zh.html" data-i18n="pricing">定价</a></li>
+                    <li><a href="./download.html" data-i18n="download">下载</a></li>
+                    <li><a href="./contact.html" data-i18n="contact">联系我们</a></li>
+                </ul>
+            </nav>
+            <div class="language-switch">
+                <button id="lang-en" class="lang-btn">EN</button>
+                <button id="lang-zh" class="lang-btn active">中文</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h2 data-i18n="welcome">欢迎来到V8Engine</h2>
+            <p data-i18n="hero-desc">我们为现代企业构建创新的软件解决方案</p>
+            <div class="cta-buttons">
+                <a href="./projects.html" class="btn primary" data-i18n="view-projects">查看我们的项目</a>
+                <a href="./contact.html" class="btn secondary" data-i18n="contact-us">联系我们</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <h2 data-i18n="our-services">我们的服务</h2>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <h3 data-i18n="web-development">网页开发</h3>
+                    <p data-i18n="web-dev-desc">使用尖端技术构建响应式和现代化的网络应用</p>
+                </div>
+                <div class="feature-card">
+                    <h3 data-i18n="mobile-apps">移动应用</h3>
+                    <p data-i18n="mobile-desc">为iOS和Android平台创建直观的移动体验</p>
+                </div>
+                <div class="feature-card">
+                    <h3 data-i18n="cloud-solutions">云解决方案</h3>
+                    <p data-i18n="cloud-desc">可扩展的云基础设施和部署解决方案</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>V8Engine</h3>
+                    <p data-i18n="company-desc">V8 指尖世界 - 一家致力于创造创新解决方案的现代软件公司</p>
+                </div>
+                <div class="footer-section">
+                    <h4 data-i18n="quick-links">快速链接</h4>
+                    <ul>
+                        <li><a href="./index_zh.html" data-i18n="home">首页</a></li>
+                        <li><a href="./about.html" data-i18n="about">关于我们</a></li>
+                        <li><a href="./projects.html" data-i18n="projects">项目</a></li>
+                        <li><a href="./pricing_zh.html" data-i18n="pricing">定价</a></li>
+                        <li><a href="./contact.html" data-i18n="contact">联系我们</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>法律</h4>
+                    <ul>
+                        <li><a href="./terms-and-conditions_zh.html">条款和条件</a></li>
+                        <li><a href="./privacy-policy_zh.html">隐私政策</a></li>
+                        <li><a href="./refund-policy_zh.html">退款政策</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 data-i18n="contact-info">联系信息</h4>
+                    <p>Email: 582883825@qq.com</p>
+                    <p>网站: v8en.com</p>
+                    <p data-i18n="rights-reserved">© 2025 V8Engine (Simon Liu)。保留所有权利。</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="./js/i18n.js"></script>
+    <script src="./js/main.js"></script>
+    <script>
+        // Override the language switcher event listeners for this specific page
+        document.addEventListener('DOMContentLoaded', () => {
+            // Set initial language
+            translatePage('zh');
+            
+            // Add event listeners to language buttons
+            document.getElementById('lang-en')?.addEventListener('click', () => {
+                // Switch to English page
+                window.location.href = './index.html';
+            });
+            
+            document.getElementById('lang-zh')?.addEventListener('click', () => {
+                // Already on Chinese page, just update UI
+                document.querySelectorAll('.lang-btn').forEach(btn => {
+                    btn.classList.remove('active');
+                });
+                document.getElementById('lang-zh').classList.add('active');
+            });
+        });
+    </script>
+</body>
+</html>
