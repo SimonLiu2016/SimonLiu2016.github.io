@@ -91,7 +91,7 @@ const translations = {
     "company-desc": "V8 指尖世界 - A modern software company dedicated to creating innovative solutions",
     "quick-links": "Quick Links",
     "contact-info": "Contact Info",
-    "rights-reserved": "© 2025 V8Engine. All rights reserved.",
+    "rights-reserved": "© 2025 V8Engine (Simon Liu). All rights reserved.",
     
     // 404 Page
     "page-not-found": "Page Not Found - V8Engine",
@@ -190,7 +190,7 @@ const translations = {
     "company-desc": "V8 指尖世界 - 一家致力于创造创新解决方案的现代软件公司",
     "quick-links": "快速链接",
     "contact-info": "联系信息",
-    "rights-reserved": "© 2025 V8Engine。保留所有权利。",
+    "rights-reserved": "© 2025 V8Engine (Simon Liu)。保留所有权利。",
     
     // 404 Page
     "page-not-found": "页面未找到 - V8Engine",
