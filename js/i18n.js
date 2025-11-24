@@ -93,6 +93,10 @@ const translations = {
     "quick-links": "Quick Links",
     "contact-info": "Contact Info",
     "rights-reserved": "© 2025 V8Engine (Simon Liu). All rights reserved.",
+    "legal": "Legal",
+    "terms-and-conditions": "Terms & Conditions",
+    "privacy-policy": "Privacy Policy",
+    "refund-policy": "Refund Policy",
     
     // 404 Page
     "page-not-found": "Page Not Found - V8Engine",
@@ -193,6 +197,10 @@ const translations = {
     "quick-links": "快速链接",
     "contact-info": "联系信息",
     "rights-reserved": "© 2025 V8Engine (Simon Liu)。保留所有权利。",
+    "legal": "法律",
+    "terms-and-conditions": "条款和条件",
+    "privacy-policy": "隐私政策",
+    "refund-policy": "退款政策",
     
     // 404 Page
     "page-not-found": "页面未找到 - V8Engine",
