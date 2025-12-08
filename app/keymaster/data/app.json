@@ -17,7 +17,7 @@
                 "zh_TW",
                 "ja"
             ],
-            "preview": "preview.png"
+            "preview": "../images/Safari.icns"
         },
         {
             "bundleId": "com.microsoft.VSCode",
@@ -37,7 +37,7 @@
                 "fr",
                 "de"
             ],
-            "preview": "preview.png"
+            "preview": "../images/VSCode.icns"
         },
         {
             "bundleId": "com.apple.macos",
@@ -53,7 +53,7 @@
                 "en",
                 "zh_CN"
             ],
-            "preview": "preview.png"
+            "preview": "../images/macOS.icns"
         }
     ],
     "totalApps": 3,
