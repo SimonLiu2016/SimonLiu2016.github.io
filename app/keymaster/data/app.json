@@ -1,0 +1,67 @@
+{
+    "apps":
+    [
+        {
+            "bundleId": "com.apple.Safari",
+            "name": "Safari",
+            "localizedName": "Safari 浏览器",
+            "category": "browser",
+            "version": "18.2",
+            "shortcutCount": 87,
+            "updatedAt": "2025-03-15",
+            "size": 245761,
+            "supportsLanguages":
+            [
+                "en",
+                "zh_CN",
+                "zh_TW",
+                "ja"
+            ],
+            "preview": "preview.png"
+        },
+        {
+            "bundleId": "com.microsoft.VSCode",
+            "name": "VSCode",
+            "localizedName": "Visual Studio Code",
+            "category": "developer",
+            "version": "1.96.0",
+            "shortcutCount": 312,
+            "updatedAt": "2025-03-15",
+            "size": 892341,
+            "supportsLanguages":
+            [
+                "en",
+                "zh_CN",
+                "ja",
+                "ko",
+                "fr",
+                "de"
+            ],
+            "preview": "preview.png"
+        },
+        {
+            "bundleId": "com.apple.macos",
+            "name": "macOS",
+            "localizedName": "macOS 系统",
+            "category": "system",
+            "version": "15.2",
+            "shortcutCount": 156,
+            "updatedAt": "2025-12-08",
+            "size": 15234,
+            "supportsLanguages":
+            [
+                "en",
+                "zh_CN"
+            ],
+            "preview": "preview.png"
+        }
+    ],
+    "totalApps": 3,
+    "lastUpdated": "2025-12-08T10:00:00Z",
+    "categories":
+    {
+        "browser": "浏览器",
+        "developer": "开发工具",
+        "system": "系统工具"
+    }
+}
