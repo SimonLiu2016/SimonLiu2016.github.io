@@ -2,66 +2,169 @@
     "apps":
     [
         {
-            "bundleId": "com.apple.Safari",
-            "name": "Safari",
-            "localizedName": "Safari 浏览器",
-            "category": "browser",
-            "version": "18.2",
-            "shortcutCount": 87,
-            "updatedAt": "2025-12-26",
+            "bundleId": "com.apple.macos.commons",
+            "name": "MacOS Commons",
+            "localizedName": "MacOS Commons",
+            "category": "OS",
+            "version": "15.7.2",
+            "shortcutCount": 30,
+            "updatedAt": "2025-12-29",
             "size": 245761,
             "supportsLanguages":
             [
+                "ar",
+                "de",
                 "en",
-                "zh_CN",
-                "zh_TW",
-                "ja"
-            ],
-            "preview": "../images/Safari.icns"
-        },
-        {
-            "bundleId": "com.microsoft.VSCode",
-            "name": "VSCode",
-            "localizedName": "Visual Studio Code",
-            "category": "developer",
-            "version": "1.96.0",
-            "shortcutCount": 312,
-            "updatedAt": "2025-03-15",
-            "size": 892341,
-            "supportsLanguages":
-            [
-                "en",
-                "zh_CN",
-                "ja",
-                "ko",
+                "es",
                 "fr",
-                "de"
+                "hi",
+                "ja",
+                "pt",
+                "ru",
+                "zh",
+                "zh_CN",
+                "zh_TW"
             ],
-            "preview": "../images/VSCode.icns"
+            "preview": "../images/duplicate.icns"
         },
         {
-            "bundleId": "com.apple.macos",
-            "name": "macOS",
-            "localizedName": "macOS 系统",
-            "category": "system",
-            "version": "15.2",
-            "shortcutCount": 156,
-            "updatedAt": "2025-12-08",
-            "size": 15234,
+            "bundleId": "com.apple.macos.sys",
+            "name": "MacOS System",
+            "localizedName": "MacOS System",
+            "category": "OS",
+            "version": "15.7.2",
+            "shortcutCount": 86,
+            "updatedAt": "2025-12-29",
+            "size": 245761,
             "supportsLanguages":
             [
+                "ar",
+                "de",
                 "en",
-                "zh_CN"
+                "es",
+                "fr",
+                "hi",
+                "ja",
+                "pt",
+                "ru",
+                "zh",
+                "zh_CN",
+                "zh_TW"
             ],
-            "preview": "../images/macOS.icns"
+            "preview": "../images/system-restore.icns"
+        },
+        {
+            "bundleId": "com.apple.macos.sysopera",
+            "name": "MacOS System Operation",
+            "localizedName": "MacOS System Operation",
+            "category": "OS",
+            "version": "15.7.2",
+            "shortcutCount": 7,
+            "updatedAt": "2025-12-29",
+            "size": 245761,
+            "supportsLanguages":
+            [
+                "ar",
+                "de",
+                "en",
+                "es",
+                "fr",
+                "hi",
+                "ja",
+                "pt",
+                "ru",
+                "zh",
+                "zh_CN",
+                "zh_TW"
+            ],
+            "preview": "../images/moon.icns"
+        },
+        {
+            "bundleId": "com.apple.macos.edit",
+            "name": "MacOS Edit",
+            "localizedName": "MacOS Edit",
+            "category": "OS",
+            "version": "15.7.2",
+            "shortcutCount": 63,
+            "updatedAt": "2025-12-29",
+            "size": 245761,
+            "supportsLanguages":
+            [
+                "ar",
+                "de",
+                "en",
+                "es",
+                "fr",
+                "hi",
+                "ja",
+                "pt",
+                "ru",
+                "zh",
+                "zh_CN",
+                "zh_TW"
+            ],
+            "preview": "../images/text-box-edit.icns"
+        },
+        {
+            "bundleId": "com.apple.macos.keyboardfocus",
+            "name": "MacOS Keyboard Focus",
+            "localizedName": "MacOS Keyboard Focusit",
+            "category": "OS",
+            "version": "15.7.2",
+            "shortcutCount": 30,
+            "updatedAt": "2025-12-29",
+            "size": 245761,
+            "supportsLanguages":
+            [
+                "ar",
+                "de",
+                "en",
+                "es",
+                "fr",
+                "hi",
+                "ja",
+                "pt",
+                "ru",
+                "zh",
+                "zh_CN",
+                "zh_TW"
+            ],
+            "preview": "../images/target.icns"
+        },
+        {
+            "bundleId": "com.apple.macos.vision",
+            "name": "MacOS Vision",
+            "localizedName": "MacOS Vision",
+            "category": "OS",
+            "version": "15.7.2",
+            "shortcutCount": 3,
+            "updatedAt": "2025-12-29",
+            "size": 245761,
+            "supportsLanguages":
+            [
+                "ar",
+                "de",
+                "en",
+                "es",
+                "fr",
+                "hi",
+                "ja",
+                "pt",
+                "ru",
+                "zh",
+                "zh_CN",
+                "zh_TW"
+            ],
+            "preview": "../images/overview.icns"
         }
     ],
-    "totalApps": 3,
-    "lastUpdated": "2025-12-08T10:00:00Z",
+    "totalApps": 6,
+    "lastUpdated": "2025-12-29T10:00:00Z",
     "categories":
     {
         "browser": "浏览器",
         "developer": "开发工具",
-        "system": "系统工具"
+        "system": "系统工具",
+        "OS": "操作系统"
     }
 }
