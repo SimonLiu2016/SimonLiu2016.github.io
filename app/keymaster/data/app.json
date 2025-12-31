@@ -234,6 +234,32 @@
                 "zh_TW"
             ],
             "preview": "../images/AppStore.icns"
+        },
+        {
+            "bundleId": "com.apple.iCal",
+            "name": "Calendar",
+            "localizedName": "Calendar",
+            "category": "Productivity",
+            "version": "2995.7.1",
+            "shortcutCount": 11,
+            "updatedAt": "2026-01-01",
+            "size": 245761,
+            "supportsLanguages":
+            [
+                "ar",
+                "de",
+                "en",
+                "es",
+                "fr",
+                "hi",
+                "ja",
+                "pt",
+                "ru",
+                "zh",
+                "zh_CN",
+                "zh_TW"
+            ],
+            "preview": "../images/iCal.icns"
         }
     ],
     "totalApps": 6,
