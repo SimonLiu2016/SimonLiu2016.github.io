@@ -182,6 +182,32 @@
                 "zh_TW"
             ],
             "preview": "../images/VSCode.icns"
+        },
+        {
+            "bundleId": "com.apple.TV",
+            "name": "Apple TV",
+            "localizedName": "Apple TV",
+            "category": "Videos",
+            "version": "1.5.6",
+            "shortcutCount": 21,
+            "updatedAt": "2025-12-31",
+            "size": 245761,
+            "supportsLanguages":
+            [
+                "ar",
+                "de",
+                "en",
+                "es",
+                "fr",
+                "hi",
+                "ja",
+                "pt",
+                "ru",
+                "zh",
+                "zh_CN",
+                "zh_TW"
+            ],
+            "preview": "../images/appleTV.icns"
         }
     ],
     "totalApps": 6,
