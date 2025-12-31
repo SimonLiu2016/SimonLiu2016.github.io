@@ -208,6 +208,32 @@
                 "zh_TW"
             ],
             "preview": "../images/appleTV.icns"
+        },
+        {
+            "bundleId": "com.apple.AppStore",
+            "name": "App Store",
+            "localizedName": "App Store",
+            "category": "Utilities",
+            "version": "1010.6.3",
+            "shortcutCount": 11,
+            "updatedAt": "2025-12-31",
+            "size": 245761,
+            "supportsLanguages":
+            [
+                "ar",
+                "de",
+                "en",
+                "es",
+                "fr",
+                "hi",
+                "ja",
+                "pt",
+                "ru",
+                "zh",
+                "zh_CN",
+                "zh_TW"
+            ],
+            "preview": "../images/appleTV.icns"
         }
     ],
     "totalApps": 6,
