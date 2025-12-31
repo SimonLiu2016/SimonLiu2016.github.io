@@ -56,6 +56,7 @@ const translations = {
     "fitness-desc": "A comprehensive fitness application with workout plans and progress tracking.",
     "dualvpn-project-desc": "Advanced VPN management tool with multi-connection support for MacOS",
     "password-project-desc": "Secure password management solution with encryption for MacOS",
+    "keymaster-project-desc": "Advanced macOS shortcut management tool with multi-language support",
     "dataviz-desc": "An open-source library for creating interactive charts and graphs in web applications.",
     "pm-desc": "A collaborative platform for teams to plan, track, and manage projects efficiently.",
     "view-details": "View Details",
@@ -68,6 +69,10 @@ const translations = {
     "documentation": "Documentation",
     "download-now": "Download Now",
     "dualvpn-documentation": "DualVPN Documentation",
+    "keymaster-documentation": "KeyMaster Documentation",
+    "keymaster-desc": "Advanced macOS shortcut management tool with multi-language support",
+    "app-store": "App Store",
+    "app-store-download": "Download from App Store",
     
     // Pricing Page
     "pricing-title": "Pricing - V8Engine",
@@ -206,6 +211,7 @@ const translations = {
     "fitness-desc": "全面的健身应用程序，提供锻炼计划和进度跟踪。",
     "dualvpn-project-desc": "支持MacOS的多连接高级VPN管理工具",
     "password-project-desc": "支持MacOS的带加密功能的安全密码管理解决方案",
+    "keymaster-project-desc": "支持多语言的高级macOS快捷键管理工具",
     "dataviz-desc": "用于在Web应用程序中创建交互式图表和图形的开源库。",
     "pm-desc": "团队协作平台，用于高效地规划、跟踪和管理项目。",
     "view-details": "查看详情",
@@ -218,6 +224,10 @@ const translations = {
     "documentation": "文档",
     "download-now": "立即下载",
     "dualvpn-documentation": "DualVPN文档",
+    "keymaster-documentation": "KeyMaster文档",
+    "keymaster-desc": "支持多语言的高级macOS快捷键管理工具",
+    "app-store": "App Store",
+    "app-store-download": "从App Store下载",
     
     // Pricing Page
     "pricing-title": "定价 - V8Engine",
