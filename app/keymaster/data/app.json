@@ -286,6 +286,32 @@
                 "zh_TW"
             ],
             "preview": "../images/Contacts.icns"
+        },
+        {
+            "bundleId": "com.apple.DiskUtility",
+            "name": "Disk Utility",
+            "localizedName": "Disk Utility",
+            "category": "Productivity",
+            "version": "2401",
+            "shortcutCount": 12,
+            "updatedAt": "2026-01-01",
+            "size": 245761,
+            "supportsLanguages":
+            [
+                "ar",
+                "de",
+                "en",
+                "es",
+                "fr",
+                "hi",
+                "ja",
+                "pt",
+                "ru",
+                "zh",
+                "zh_CN",
+                "zh_TW"
+            ],
+            "preview": "../images/disk_utility.icns"
         }
     ],
     "totalApps": 11,
