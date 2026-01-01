@@ -390,6 +390,32 @@
                 "zh_TW"
             ],
             "preview": "../images/keynote.icns"
+        },
+        {
+            "bundleId": "com.apple.mail",
+            "name": "Mail",
+            "localizedName": "Mail",
+            "category": "Productivity",
+            "version": "3826.700.81.1.4",
+            "shortcutCount": 27,
+            "updatedAt": "2026-01-01",
+            "size": 245761,
+            "supportsLanguages":
+            [
+                "ar",
+                "de",
+                "en",
+                "es",
+                "fr",
+                "hi",
+                "ja",
+                "pt",
+                "ru",
+                "zh",
+                "zh_CN",
+                "zh_TW"
+            ],
+            "preview": "../images/mail.icns"
         }
     ],
     "totalApps": 15,
