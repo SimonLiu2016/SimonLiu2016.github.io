@@ -312,9 +312,35 @@
                 "zh_TW"
             ],
             "preview": "../images/disk_utility.icns"
+        },
+        {
+            "bundleId": "com.apple.findmy",
+            "name": "FindMy",
+            "localizedName": "FindMy",
+            "category": "APPL",
+            "version": "415.26.4.2.13",
+            "shortcutCount": 11,
+            "updatedAt": "2026-01-01",
+            "size": 245761,
+            "supportsLanguages":
+            [
+                "ar",
+                "de",
+                "en",
+                "es",
+                "fr",
+                "hi",
+                "ja",
+                "pt",
+                "ru",
+                "zh",
+                "zh_CN",
+                "zh_TW"
+            ],
+            "preview": "../images/findmy.icns"
         }
     ],
-    "totalApps": 11,
+    "totalApps": 12,
     "lastUpdated": "2026-01-01T10:00:00Z",
     "categories":
     {
