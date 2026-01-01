@@ -416,6 +416,32 @@
                 "zh_TW"
             ],
             "preview": "../images/mail.icns"
+        },
+        {
+            "bundleId": "com.apple.Maps",
+            "name": "Maps",
+            "localizedName": "Maps",
+            "category": "Travel",
+            "version": "2864.26.4.18.4",
+            "shortcutCount": 16,
+            "updatedAt": "2026-01-01",
+            "size": 245761,
+            "supportsLanguages":
+            [
+                "ar",
+                "de",
+                "en",
+                "es",
+                "fr",
+                "hi",
+                "ja",
+                "pt",
+                "ru",
+                "zh",
+                "zh_CN",
+                "zh_TW"
+            ],
+            "preview": "../images/maps.icns"
         }
     ],
     "totalApps": 15,
