@@ -520,6 +520,58 @@
                 "zh_TW"
             ],
             "preview": "../images/News.icns"
+        },
+        {
+            "bundleId": "com.apple.Notes",
+            "name": "Notes",
+            "localizedName": "Notes",
+            "category": "Productivity",
+            "version": "2998.63.0.1",
+            "shortcutCount": 53,
+            "updatedAt": "2026-01-02",
+            "size": 245761,
+            "supportsLanguages":
+            [
+                "ar",
+                "de",
+                "en",
+                "es",
+                "fr",
+                "hi",
+                "ja",
+                "pt",
+                "ru",
+                "zh",
+                "zh_CN",
+                "zh_TW"
+            ],
+            "preview": "../images/notes.icns"
+        },
+        {
+            "bundleId": "com.apple.iWork.Numbers",
+            "name": "Numbers",
+            "localizedName": "Numbers",
+            "category": "Productivity",
+            "version": "14.4",
+            "shortcutCount": 53,
+            "updatedAt": "2026-01-02",
+            "size": 245761,
+            "supportsLanguages":
+            [
+                "ar",
+                "de",
+                "en",
+                "es",
+                "fr",
+                "hi",
+                "ja",
+                "pt",
+                "ru",
+                "zh",
+                "zh_CN",
+                "zh_TW"
+            ],
+            "preview": "../images/numbers.icns"
         }
     ],
     "totalApps": 58,
