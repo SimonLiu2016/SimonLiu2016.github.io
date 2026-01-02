@@ -468,9 +468,35 @@
                 "zh_TW"
             ],
             "preview": "../images/messages.icns"
+        },
+        {
+            "bundleId": "com.apple.Music",
+            "name": "Music",
+            "localizedName": "Music",
+            "category": "music",
+            "version": "1.5.6",
+            "shortcutCount": 58,
+            "updatedAt": "2026-01-01",
+            "size": 245761,
+            "supportsLanguages":
+            [
+                "ar",
+                "de",
+                "en",
+                "es",
+                "fr",
+                "hi",
+                "ja",
+                "pt",
+                "ru",
+                "zh",
+                "zh_CN",
+                "zh_TW"
+            ],
+            "preview": "../images/music.icns"
         }
     ],
-    "totalApps": 15,
+    "totalApps": 58,
     "lastUpdated": "2026-01-01T10:00:00Z",
     "categories":
     {
