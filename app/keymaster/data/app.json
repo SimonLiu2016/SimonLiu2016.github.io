@@ -624,10 +624,36 @@
                 "zh_TW"
             ],
             "preview": "../images/podcasts.icns"
+        },
+        {
+            "bundleId": "com.apple.reminders",
+            "name": "Reminders",
+            "localizedName": "Reminders",
+            "category": "Productivity",
+            "version": "3740",
+            "shortcutCount": 32,
+            "updatedAt": "2026-01-06",
+            "size": 245761,
+            "supportsLanguages":
+            [
+                "ar",
+                "de",
+                "en",
+                "es",
+                "fr",
+                "hi",
+                "ja",
+                "pt",
+                "ru",
+                "zh",
+                "zh_CN",
+                "zh_TW"
+            ],
+            "preview": "../images/reminders.icns"
         }
     ],
     "totalApps": 58,
-    "lastUpdated": "2026-01-01T10:00:00Z",
+    "lastUpdated": "2026-01-06T10:00:00Z",
     "categories":
     {
         "browser": "浏览器",
