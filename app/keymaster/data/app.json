@@ -728,6 +728,32 @@
                 "zh_TW"
             ],
             "preview": "../images/Terminal.icns"
+        },
+        {
+            "bundleId": "com.apple.VoiceMemos",
+            "name": "VoiceMemos",
+            "localizedName": "VoiceMemos",
+            "category": "Utilities",
+            "version": "1274",
+            "shortcutCount": 22,
+            "updatedAt": "2026-01-06",
+            "size": 245761,
+            "supportsLanguages":
+            [
+                "ar",
+                "de",
+                "en",
+                "es",
+                "fr",
+                "hi",
+                "ja",
+                "pt",
+                "ru",
+                "zh",
+                "zh_CN",
+                "zh_TW"
+            ],
+            "preview": "../images/voice.icns"
         }
     ],
     "totalApps": 58,
