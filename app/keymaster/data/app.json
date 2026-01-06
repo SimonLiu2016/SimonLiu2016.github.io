@@ -702,6 +702,32 @@
                 "zh_TW"
             ],
             "preview": "../images/Safari.icns"
+        },
+        {
+            "bundleId": "com.apple.Terminal",
+            "name": "Terminal",
+            "localizedName": "Terminal",
+            "category": "Utilities",
+            "version": "455.1",
+            "shortcutCount": 98,
+            "updatedAt": "2026-01-06",
+            "size": 245761,
+            "supportsLanguages":
+            [
+                "ar",
+                "de",
+                "en",
+                "es",
+                "fr",
+                "hi",
+                "ja",
+                "pt",
+                "ru",
+                "zh",
+                "zh_CN",
+                "zh_TW"
+            ],
+            "preview": "../images/Terminal.icns"
         }
     ],
     "totalApps": 58,
