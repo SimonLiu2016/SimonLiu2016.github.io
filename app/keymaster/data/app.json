@@ -598,6 +598,32 @@
                 "zh_TW"
             ],
             "preview": "../images/photos.icns"
+        },
+        {
+            "bundleId": "com.apple.podcasts",
+            "name": "Podcasts",
+            "localizedName": "Podcasts",
+            "category": "Podcasts",
+            "version": "4024.700.3",
+            "shortcutCount": 18,
+            "updatedAt": "2026-01-06",
+            "size": 245761,
+            "supportsLanguages":
+            [
+                "ar",
+                "de",
+                "en",
+                "es",
+                "fr",
+                "hi",
+                "ja",
+                "pt",
+                "ru",
+                "zh",
+                "zh_CN",
+                "zh_TW"
+            ],
+            "preview": "../images/podcasts.icns"
         }
     ],
     "totalApps": 58,
