@@ -650,6 +650,32 @@
                 "zh_TW"
             ],
             "preview": "../images/reminders.icns"
+        },
+        {
+            "bundleId": "com.apple.Preview",
+            "name": "Preview",
+            "localizedName": "Preview",
+            "category": "Productivity",
+            "version": "1069.7.1",
+            "shortcutCount": 21,
+            "updatedAt": "2026-01-06",
+            "size": 245761,
+            "supportsLanguages":
+            [
+                "ar",
+                "de",
+                "en",
+                "es",
+                "fr",
+                "hi",
+                "ja",
+                "pt",
+                "ru",
+                "zh",
+                "zh_CN",
+                "zh_TW"
+            ],
+            "preview": "../images/preview.icns"
         }
     ],
     "totalApps": 58,
