@@ -754,6 +754,32 @@
                 "zh_TW"
             ],
             "preview": "../images/voice.icns"
+        },
+        {
+            "bundleId": "com.google.Chrome",
+            "name": "Chrome",
+            "localizedName": "Chrome",
+            "category": "Utilities",
+            "version": "7499.170",
+            "shortcutCount": 87,
+            "updatedAt": "2026-01-06",
+            "size": 245761,
+            "supportsLanguages":
+            [
+                "ar",
+                "de",
+                "en",
+                "es",
+                "fr",
+                "hi",
+                "ja",
+                "pt",
+                "ru",
+                "zh",
+                "zh_CN",
+                "zh_TW"
+            ],
+            "preview": "../images/chrome.icns"
         }
     ],
     "totalApps": 58,
